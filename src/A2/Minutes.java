@@ -3,7 +3,7 @@ package A2;
 public class Minutes implements TimeUnit {
     private int minutes;
 
-    public Minutes(int number) {
+    public Minutes(int minutes) {
         this.minutes = minutes;
     }
 
@@ -14,8 +14,5 @@ public class Minutes implements TimeUnit {
 
     public int getMinutes() {
         return minutes;
-    }
-    public void setMinutes(int minutes) {
-        this.minutes = minutes;
     }
 }

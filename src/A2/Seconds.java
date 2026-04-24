@@ -11,7 +11,4 @@ public class Seconds implements TimeUnit {
     public int getSeconds() {
         return seconds;
     }
-    public void setSeconds(int seconds) {
-        this.seconds = seconds;
-    }
 }

@@ -14,7 +14,7 @@ public class Main {
     public static boolean atLeastSeconds(int seconds, TimeUnit unit) {
         return unit.getSeconds() >= seconds;
     }
-    public static boolean atLeastSeconds(int amount, char c, TimeUnit unit) {
+    public static boolean atLeast(int amount, char c, TimeUnit unit) {
         switch(c) {
             case 's':
                 return unit.getSeconds() >= amount;

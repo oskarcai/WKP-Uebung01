@@ -6,13 +6,13 @@ public class TimeSpan implements TimeUnit {
     private Seconds seconds;
 
     public TimeSpan(int hours, int minutes, int seconds) {
-        this.hours.setHours(hours);
-        this.minutes.setMinutes(minutes);
-        this.seconds.setSeconds(seconds);
+        this.hours = new Hours(hours);
+        this.minutes = new Minutes(minutes);
+        this.seconds = new Seconds(seconds);
     }
 
     @Override
     public int getSeconds() {
-        return 0;
+        return this.hours.getSeconds() + this.minutes.getSeconds() + this.seconds.getSeconds();
     }
 }
